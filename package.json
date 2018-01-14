@@ -1,0 +1,14 @@
+{
+  "name": "jse-headless-miner",
+  "version": "1.0.0",
+  "description": "Headless Chrome JSECoin Platform Miner",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mario Reder",
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer": "^1.0.0"
+  }
+}
