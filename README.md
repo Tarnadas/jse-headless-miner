@@ -20,13 +20,10 @@ $ git clone https://github.com/Tarnadas/jse-headless-miner.git
 
 1. Go to https://platform.jsecoin.com/
 2. Open Chrome Dev Tools (Ctrl + Shift + J).
-3. Open Sources tab.
-4. Navigate to platform.jsecoin.com/js/jsecoin.min.js?v=whatever
-5. Pretty print this file.
-6. Search for the string "user = JSON.parse(data)" and add a breakpoint.
-7. Login on the website. The breakpoint will halt execution.
-8. Check local variable called data. Copy the content of this variable into a new file called userData.json
-9. Done
+3. Login on the website.
+4. Print the user variable by just running `JSON.stringify(user)`
+5. Copy the content of this output into a new file called userData.json
+6. Done
 
 ### Install and run
 
