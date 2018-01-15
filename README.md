@@ -1,4 +1,4 @@
-# Headless Chrome JEScoin Platform Miner
+# Headless Chrome JSEcoin Platform Miner
 
 This tool allows automated mining of JSEcoin without running it locally in your browser. It is a little bith tough to set up, but it just works fine.
 
