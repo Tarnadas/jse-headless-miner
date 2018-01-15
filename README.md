@@ -25,7 +25,7 @@ $ git clone https://github.com/Tarnadas/jse-headless-miner.git
 5. Pretty print this file.
 6. Search for the string "user = JSON.parse(data)" and add a breakpoint.
 7. Login on the website. The breakpoint will halt execution.
-8. Check local variable called data. This is will be the content of userData.json
+8. Check local variable called data. Copy the content of this variable into a new file called userData.json
 9. Done
 
 ### Install and run
