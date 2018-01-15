@@ -1,10 +1,20 @@
-const puppeteer = require('puppeteer');
+const puppeteer = require('puppeteer')
+const fs = require('fs')
+const path = require('path')
+
+const userData = require('./userData.json');
 
 (async () => {
-  const browser = await puppeteer.launch();
-  const page = await browser.newPage();
-  await page.goto('https://platform.jsecoin.com/');
-  await page.screenshot({path: 'example.png'});
-
-  await browser.close();
+  const browser = await puppeteer.launch({
+    headless: true
+  })
+  const page = await browser.newPage()
+  page.on('console', msg => {
+    console.log(msg.text())
+  })
+  await page.goto('https://platform.jsecoin.com/')
+  await page.evaluate(userData => {
+    user = userData
+    startMining()
+  }, userData)
 })()
