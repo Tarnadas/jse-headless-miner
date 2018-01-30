@@ -16,5 +16,10 @@ const userData = require('./userData.json');
   await page.evaluate(userData => {
     user = userData
     startMining()
+    setTimeout(() => {
+      refreshUser(() => {
+        console.log('-- refreshed session --')
+      })
+    }, 60000)
   }, userData)
 })()
